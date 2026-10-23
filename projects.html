@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Projects — Muhammad Zakee Qureshi</title>
+<meta name="description" content="AI, machine learning, and computer vision projects by Muhammad Zakee Qureshi." />
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+<script>
+  try {
+    var t = localStorage.getItem("theme");
+    if (t) document.documentElement.setAttribute("data-theme", t);
+  } catch (e) {}
+</script>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__brand"><span class="dot"></span>Zakee Qureshi</a>
+    <ul class="nav__links" data-nav-links>
+      <li><a href="index.html" class="nav__link">Home</a></li>
+      <li><a href="projects.html" class="nav__link is-active">Projects</a></li>
+      <li><a href="about.html" class="nav__link">About</a></li>
+      <li><a href="certifications.html" class="nav__link">Certifications</a></li>
+      <li><a href="contact.html" class="nav__link">Contact Me</a></li>
+      <li class="nav__cta-mobile">
+        <a href="assets/resume.pdf" download class="btn btn-primary" style="width:100%;justify-content:center;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 19h16"/></svg>
+          Download Resume
+        </a>
+      </li>
+    </ul>
+    <div class="nav__actions">
+      <a href="assets/resume.pdf" download class="btn btn-primary nav__resume-btn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 19h16"/></svg>
+        <span>Resume</span>
+      </a>
+      <button class="theme-toggle" data-theme-toggle aria-label="Toggle dark mode">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32l1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+      </button>
+      <button class="nav__toggle" data-nav-toggle aria-label="Toggle menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main class="wrap">
+
+  <div class="page-head">
+    <h1>Projects</h1>
+    <p>A selection of AI, machine learning, and full-stack systems I've designed and shipped — from multi-agent LLM workflows to on-device computer vision.</p>
+  </div>
+
+  <section class="section" style="border-top:none;">
+    <div class="project-list">
+
+      <div class="project-card reveal">
+        <div class="project-card__num">01</div>
+        <h3>Multi-Agent AI Contract Analysis and Automated Clause Review</h3>
+        <p>Designed and implemented a domain-driven, multi-agent contract analysis system on Google Cloud Vertex AI, orchestrating specialized AI agents for structured clause extraction, legal reasoning, policy compliance evaluation, and automated redlining. The system evaluates contractual clauses against predefined business rules to identify non-standard terms and generate actionable recommendations.</p>
+        <div class="chip-row"><span class="chip">Vertex AI</span><span class="chip">Multi-Agent Systems</span><span class="chip">LLM</span><span class="chip">Legal Tech</span></div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-card__num">02</div>
+        <h3>AI-Powered Contract Clause Tracking and Version Comparison POC</h3>
+        <p>Developed a proof of concept to track and verify clause-level changes across contract versions, including documents modified through AI processing and PDF-to-DOCX conversions. Explored PageIndex for hierarchical document understanding and clause retrieval, Docling for structured document parsing, and XML-based analysis to leverage paragraph metadata and structural attributes. Combined exact text matching, semantic similarity, and structural verification to identify added, removed, modified, and unchanged clauses, improving change detection accuracy, reducing false matches, and ensuring traceability of contract changes throughout the AI processing pipeline.</p>
+        <div class="chip-row"><span class="chip">Clause Tracking</span><span class="chip">Docling</span><span class="chip">Semantic Similarity</span><span class="chip">PageIndex</span></div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-card__num">03</div>
+        <h3>On-Device Retail Shelf-to-Catalog Recognition and Price Verification</h3>
+        <p>Built a fully on-device Android computer vision pipeline for retail shelf auditing and product verification. Combined ArUco-guided image capture, real-time YOLO detection and tracking, MobileNetV3 similarity matching, and SIFT-based geometric verification to improve product identification across varying camera angles, lighting conditions, and shadowed price tags.</p>
+        <div class="chip-row"><span class="chip">Computer Vision</span><span class="chip">YOLO</span><span class="chip">Android</span><span class="chip">Edge AI</span></div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-card__num">04</div>
+        <h3>Generative AI-Powered Active Directory Health Check and Remediation</h3>
+        <p>Developed an AI-powered automation solution to streamline Active Directory diagnostics and troubleshooting. The system executes diagnostic commands, analyzes logs using LLMs to identify anomalies, generates remediation recommendations, and automates corrective actions, reducing manual investigation and intervention.</p>
+        <div class="chip-row"><span class="chip">Generative AI</span><span class="chip">LLM</span><span class="chip">IT Automation</span></div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-card__num">05</div>
+        <h3>High-Performance Document Processing Pipeline on Azure</h3>
+        <p>Optimized and deployed a document processing pipeline using Azure Functions and Azure Container Apps with serverless GPU execution. Improved processing efficiency by reducing response time from 7–8 minutes to approximately 10 seconds, achieving up to a 42× performance improvement.</p>
+        <div class="chip-row"><span class="chip">Azure Functions</span><span class="chip">Serverless GPU</span><span class="chip">Performance Engineering</span></div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-card__num">06</div>
+        <h3>AI-Powered Insurance Underwriting and Risk Assessment</h3>
+        <p>Developed an AI-powered insurance application to support underwriters through automated document analysis, application triage, and risk assessment. Integrated reporting capabilities to consolidate relevant findings and streamline underwriting workflows and decision-making.</p>
+        <div class="chip-row"><span class="chip">Document AI</span><span class="chip">Risk Assessment</span><span class="chip">LLM</span></div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-card__num">07</div>
+        <h3>Retail Application Development and Backend Pipeline Integration</h3>
+        <p>Developed 4–5 retail-focused web applications using React.js, integrating frontend interfaces with backend APIs to trigger processing pipelines and automate business workflows. Focused on efficient API communication, responsive user interactions, and reliable integration between frontend and backend services.</p>
+        <div class="chip-row"><span class="chip">React.js</span><span class="chip">API Integration</span><span class="chip">Full-Stack</span></div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-card__num">08</div>
+        <h3>Secure PDF Retrieval and Intelligent Document Query System</h3>
+        <p>Built a PDF retrieval application using React.js and Django, integrating vector databases and LLMs for semantic search and prompt-based extraction of relevant document chunks. Implemented role-based access control (RBAC) to provide secure, permission-aware document retrieval and tailored access to information.</p>
+        <div class="chip-row"><span class="chip">RAG</span><span class="chip">Vector DB</span><span class="chip">RBAC</span><span class="chip">Django</span></div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-card__num">09</div>
+        <h3>Fixed Voice Customer Churn Prediction and Driver Analysis</h3>
+        <p>Developed machine learning models to predict Fixed Voice customer churn using Logistic Regression, Decision Trees, Random Forest, and XGBoost. Evaluated model performance against random-sampling baselines and analyzed influential features to identify key churn drivers and support data-driven customer retention strategies.</p>
+        <div class="chip-row"><span class="chip">Machine Learning</span><span class="chip">XGBoost</span><span class="chip">Predictive Analytics</span></div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-card__num">10</div>
+        <h3>Flask-Based Data Analysis and Machine Learning Platform</h3>
+        <p>Developed a Python web application using Flask to simplify exploratory data analysis and machine learning model training. Created a web-based workflow for working with datasets, preparing data, training predictive models, and making experimentation more accessible without relying entirely on standalone scripts.</p>
+        <div class="chip-row"><span class="chip">Flask</span><span class="chip">MLOps</span><span class="chip">Data Analysis</span></div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer wrap">
+  <p>&copy; <span data-year></span> Muhammad Zakee Qureshi. Built with care.</p>
+  <div class="footer__socials">
+    <a href="https://github.com/zakee001" target="_blank" rel="noopener" aria-label="GitHub">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.1 3.29 9.42 7.86 10.95.58.1.79-.25.79-.56 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.75 2.69 1.25 3.34.96.1-.74.4-1.25.73-1.54-2.56-.29-5.26-1.28-5.26-5.7 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.46.11-3.05 0 0 .96-.31 3.15 1.18a10.9 10.9 0 015.73 0c2.19-1.49 3.15-1.18 3.15-1.18.62 1.59.23 2.76.11 3.05.74.81 1.18 1.84 1.18 3.1 0 4.43-2.7 5.4-5.27 5.69.41.36.78 1.08.78 2.17 0 1.57-.01 2.83-.01 3.22 0 .31.2.67.8.56A10.52 10.52 0 0023.5 12c0-6.27-5.23-11.5-11.5-11.5z"/></svg>
+    </a>
+    <a href="https://www.linkedin.com/in/muhammad-zakee-a6928b1bb/" target="_blank" rel="noopener" aria-label="LinkedIn">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.07 2.07 0 11.01-4.14 2.07 2.07 0 01-.01 4.14zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+    </a>
+    <a href="mailto:zakee8979@gmail.com" aria-label="Email">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 6h20v12H2z"/><path d="M22 6l-10 7L2 6"/></svg>
+    </a>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
