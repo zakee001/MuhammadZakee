@@ -5,7 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <title>Projects — Muhammad Zakee Qureshi</title>
 <meta name="description" content="AI, machine learning, and computer vision projects by Muhammad Zakee Qureshi." />
-<link rel="icon" href="data:,">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+<link rel="shortcut icon" href="assets/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -23,6 +26,12 @@
   <div class="nav__inner">
     <a href="index.html" class="nav__brand"><span class="dot"></span>Zakee Qureshi</a>
     <ul class="nav__links" data-nav-links>
+      <li class="nav__drawer-head">
+        <span class="nav__drawer-title"><span class="dot"></span>Menu</span>
+        <button class="nav__drawer-close" data-nav-close aria-label="Close menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+        </button>
+      </li>
       <li><a href="index.html" class="nav__link">Home</a></li>
       <li><a href="projects.html" class="nav__link is-active">Projects</a></li>
       <li><a href="about.html" class="nav__link">About</a></li>
@@ -36,7 +45,7 @@
       </li>
     </ul>
     <div class="nav__actions">
-      <a href="assets/resume.pdf" download class="btn btn-primary nav__resume-btn">
+      <a href="assets/resume.pdf" download class="btn btn-resume nav__resume-btn">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 19h16"/></svg>
         <span>Resume</span>
       </a>
@@ -50,6 +59,7 @@
     </div>
   </div>
 </nav>
+<div class="nav__backdrop" data-nav-backdrop></div>
 
 <main class="wrap">
 
@@ -59,76 +69,126 @@
   </div>
 
   <section class="section" style="border-top:none;">
-    <div class="project-list">
+    <div class="vtimeline">
 
-      <div class="project-card reveal">
-        <div class="project-card__num">01</div>
-        <h3>Multi-Agent AI Contract Analysis and Automated Clause Review</h3>
-        <p>Designed and implemented a domain-driven, multi-agent contract analysis system on Google Cloud Vertex AI, orchestrating specialized AI agents for structured clause extraction, legal reasoning, policy compliance evaluation, and automated redlining. The system evaluates contractual clauses against predefined business rules to identify non-standard terms and generate actionable recommendations.</p>
+      <div class="vtimeline__item reveal">
+        <div class="vtimeline__label"><span>01</span></div>
+        <div class="vtimeline__rail"><span class="vtimeline__dot"></span></div>
+        <div class="vtimeline__content">
+          <div class="project-card">
+            <h3>Multi-Agent AI Contract Analysis and Automated Clause Review</h3>
+        <p>Designed and implemented a domain-driven, multi-agent contract analysis system on Google Cloud <strong>Vertex AI</strong>, orchestrating specialized AI agents for structured clause extraction, legal reasoning, policy compliance evaluation, and automated redlining. The system evaluates contractual clauses against predefined business rules to identify non-standard terms and generate actionable recommendations.</p>
         <div class="chip-row"><span class="chip">Vertex AI</span><span class="chip">Multi-Agent Systems</span><span class="chip">LLM</span><span class="chip">Legal Tech</span></div>
+          </div>
+        </div>
       </div>
 
-      <div class="project-card reveal">
-        <div class="project-card__num">02</div>
-        <h3>AI-Powered Contract Clause Tracking and Version Comparison POC</h3>
-        <p>Developed a proof of concept to track and verify clause-level changes across contract versions, including documents modified through AI processing and PDF-to-DOCX conversions. Explored PageIndex for hierarchical document understanding and clause retrieval, Docling for structured document parsing, and XML-based analysis to leverage paragraph metadata and structural attributes. Combined exact text matching, semantic similarity, and structural verification to identify added, removed, modified, and unchanged clauses, improving change detection accuracy, reducing false matches, and ensuring traceability of contract changes throughout the AI processing pipeline.</p>
+      <div class="vtimeline__item reveal">
+        <div class="vtimeline__label"><span>02</span></div>
+        <div class="vtimeline__rail"><span class="vtimeline__dot"></span></div>
+        <div class="vtimeline__content">
+          <div class="project-card">
+            <h3>AI-Powered Contract Clause Tracking and Version Comparison POC</h3>
+        <p>Developed a POC for contract clause tracking and version comparison across AI processing and PDF-to-DOCX conversions. Explored <strong>PageIndex</strong> for document retrieval, <strong>Docling</strong> for structured parsing, and <strong>XML</strong>-based analysis for structural verification. Combined text matching and semantic similarity to detect added, removed, modified, and unchanged clauses while reducing false matches and improving traceability.</p>
         <div class="chip-row"><span class="chip">Clause Tracking</span><span class="chip">Docling</span><span class="chip">Semantic Similarity</span><span class="chip">PageIndex</span></div>
+          </div>
+        </div>
       </div>
 
-      <div class="project-card reveal">
-        <div class="project-card__num">03</div>
-        <h3>On-Device Retail Shelf-to-Catalog Recognition and Price Verification</h3>
-        <p>Built a fully on-device Android computer vision pipeline for retail shelf auditing and product verification. Combined ArUco-guided image capture, real-time YOLO detection and tracking, MobileNetV3 similarity matching, and SIFT-based geometric verification to improve product identification across varying camera angles, lighting conditions, and shadowed price tags.</p>
+      <div class="vtimeline__item reveal">
+        <div class="vtimeline__label"><span>03</span></div>
+        <div class="vtimeline__rail"><span class="vtimeline__dot"></span></div>
+        <div class="vtimeline__content">
+          <div class="project-card">
+            <h3>On-Device Retail Shelf-to-Catalog Recognition and Price Verification</h3>
+        <p>Built a fully on-device Android computer vision pipeline for retail shelf auditing and product verification. Combined ArUco-guided image capture, real-time <strong>YOLO</strong> detection and tracking, <strong>MobileNetV3</strong> similarity matching, and SIFT-based geometric verification to improve product identification across varying camera angles, lighting conditions, and shadowed price tags.</p>
         <div class="chip-row"><span class="chip">Computer Vision</span><span class="chip">YOLO</span><span class="chip">Android</span><span class="chip">Edge AI</span></div>
+          </div>
+        </div>
       </div>
 
-      <div class="project-card reveal">
-        <div class="project-card__num">04</div>
-        <h3>Generative AI-Powered Active Directory Health Check and Remediation</h3>
-        <p>Developed an AI-powered automation solution to streamline Active Directory diagnostics and troubleshooting. The system executes diagnostic commands, analyzes logs using LLMs to identify anomalies, generates remediation recommendations, and automates corrective actions, reducing manual investigation and intervention.</p>
+      <div class="vtimeline__item reveal">
+        <div class="vtimeline__label"><span>04</span></div>
+        <div class="vtimeline__rail"><span class="vtimeline__dot"></span></div>
+        <div class="vtimeline__content">
+          <div class="project-card">
+            <h3>Generative AI-Powered Active Directory Health Check and Remediation</h3>
+        <p>Developed an AI-powered automation solution to streamline Active Directory diagnostics and troubleshooting. The system executes diagnostic commands, analyzes logs using <strong>LLMs</strong> to identify anomalies, generates remediation recommendations, and automates corrective actions, reducing manual investigation and intervention.</p>
         <div class="chip-row"><span class="chip">Generative AI</span><span class="chip">LLM</span><span class="chip">IT Automation</span></div>
+          </div>
+        </div>
       </div>
 
-      <div class="project-card reveal">
-        <div class="project-card__num">05</div>
-        <h3>High-Performance Document Processing Pipeline on Azure</h3>
-        <p>Optimized and deployed a document processing pipeline using Azure Functions and Azure Container Apps with serverless GPU execution. Improved processing efficiency by reducing response time from 7–8 minutes to approximately 10 seconds, achieving up to a 42× performance improvement.</p>
+      <div class="vtimeline__item reveal">
+        <div class="vtimeline__label"><span>05</span></div>
+        <div class="vtimeline__rail"><span class="vtimeline__dot"></span></div>
+        <div class="vtimeline__content">
+          <div class="project-card">
+            <h3>High-Performance Document Processing Pipeline on Azure</h3>
+        <p>Optimized and deployed a document processing pipeline using Azure Functions and Azure Container Apps with <strong>serverless GPU</strong> execution. Improved processing efficiency by reducing response time from 7–8 minutes to approximately <strong>10 seconds, achieving up to a 42× performance improvement</strong>.</p>
         <div class="chip-row"><span class="chip">Azure Functions</span><span class="chip">Serverless GPU</span><span class="chip">Performance Engineering</span></div>
+          </div>
+        </div>
       </div>
 
-      <div class="project-card reveal">
-        <div class="project-card__num">06</div>
-        <h3>AI-Powered Insurance Underwriting and Risk Assessment</h3>
+      <div class="vtimeline__item reveal">
+        <div class="vtimeline__label"><span>06</span></div>
+        <div class="vtimeline__rail"><span class="vtimeline__dot"></span></div>
+        <div class="vtimeline__content">
+          <div class="project-card">
+            <h3>AI-Powered Insurance Underwriting and Risk Assessment</h3>
         <p>Developed an AI-powered insurance application to support underwriters through automated document analysis, application triage, and risk assessment. Integrated reporting capabilities to consolidate relevant findings and streamline underwriting workflows and decision-making.</p>
         <div class="chip-row"><span class="chip">Document AI</span><span class="chip">Risk Assessment</span><span class="chip">LLM</span></div>
+          </div>
+        </div>
       </div>
 
-      <div class="project-card reveal">
-        <div class="project-card__num">07</div>
-        <h3>Retail Application Development and Backend Pipeline Integration</h3>
-        <p>Developed 4–5 retail-focused web applications using React.js, integrating frontend interfaces with backend APIs to trigger processing pipelines and automate business workflows. Focused on efficient API communication, responsive user interactions, and reliable integration between frontend and backend services.</p>
+      <div class="vtimeline__item reveal">
+        <div class="vtimeline__label"><span>07</span></div>
+        <div class="vtimeline__rail"><span class="vtimeline__dot"></span></div>
+        <div class="vtimeline__content">
+          <div class="project-card">
+            <h3>Retail Application Development and Backend Pipeline Integration</h3>
+        <p>Developed 4–5 retail-focused web applications using <strong>React.js</strong>, integrating frontend interfaces with backend APIs to trigger processing pipelines and automate business workflows. Focused on efficient API communication, responsive user interactions, and reliable integration between frontend and backend services.</p>
         <div class="chip-row"><span class="chip">React.js</span><span class="chip">API Integration</span><span class="chip">Full-Stack</span></div>
+          </div>
+        </div>
       </div>
 
-      <div class="project-card reveal">
-        <div class="project-card__num">08</div>
-        <h3>Secure PDF Retrieval and Intelligent Document Query System</h3>
-        <p>Built a PDF retrieval application using React.js and Django, integrating vector databases and LLMs for semantic search and prompt-based extraction of relevant document chunks. Implemented role-based access control (RBAC) to provide secure, permission-aware document retrieval and tailored access to information.</p>
+      <div class="vtimeline__item reveal">
+        <div class="vtimeline__label"><span>08</span></div>
+        <div class="vtimeline__rail"><span class="vtimeline__dot"></span></div>
+        <div class="vtimeline__content">
+          <div class="project-card">
+            <h3>Secure PDF Retrieval and Intelligent Document Query System</h3>
+        <p>Built a PDF retrieval application using <strong>React.js</strong> and <strong>Django</strong>, integrating vector databases and LLMs for semantic search and prompt-based extraction of relevant document chunks. Implemented role-based access control (<strong>RBAC</strong>) to provide secure, permission-aware document retrieval and tailored access to information.</p>
         <div class="chip-row"><span class="chip">RAG</span><span class="chip">Vector DB</span><span class="chip">RBAC</span><span class="chip">Django</span></div>
+          </div>
+        </div>
       </div>
 
-      <div class="project-card reveal">
-        <div class="project-card__num">09</div>
-        <h3>Fixed Voice Customer Churn Prediction and Driver Analysis</h3>
-        <p>Developed machine learning models to predict Fixed Voice customer churn using Logistic Regression, Decision Trees, Random Forest, and XGBoost. Evaluated model performance against random-sampling baselines and analyzed influential features to identify key churn drivers and support data-driven customer retention strategies.</p>
+      <div class="vtimeline__item reveal">
+        <div class="vtimeline__label"><span>09</span></div>
+        <div class="vtimeline__rail"><span class="vtimeline__dot"></span></div>
+        <div class="vtimeline__content">
+          <div class="project-card">
+            <h3>Fixed Voice Customer Churn Prediction and Driver Analysis</h3>
+        <p>Developed machine learning models to predict Fixed Voice customer churn using Logistic Regression, Decision Trees, <strong>Random Forest</strong>, and <strong>XGBoost</strong>. Evaluated model performance against random-sampling baselines and analyzed influential features to identify key churn drivers and support data-driven customer retention strategies.</p>
         <div class="chip-row"><span class="chip">Machine Learning</span><span class="chip">XGBoost</span><span class="chip">Predictive Analytics</span></div>
+          </div>
+        </div>
       </div>
 
-      <div class="project-card reveal">
-        <div class="project-card__num">10</div>
-        <h3>Flask-Based Data Analysis and Machine Learning Platform</h3>
-        <p>Developed a Python web application using Flask to simplify exploratory data analysis and machine learning model training. Created a web-based workflow for working with datasets, preparing data, training predictive models, and making experimentation more accessible without relying entirely on standalone scripts.</p>
+      <div class="vtimeline__item reveal">
+        <div class="vtimeline__label"><span>10</span></div>
+        <div class="vtimeline__rail"><span class="vtimeline__dot"></span></div>
+        <div class="vtimeline__content">
+          <div class="project-card">
+            <h3>Flask-Based Data Analysis and Machine Learning Platform</h3>
+        <p>Developed a Python web application using <strong>Flask</strong> to simplify exploratory data analysis and machine learning model training. Created a web-based workflow for working with datasets, preparing data, training predictive models, and making experimentation more accessible without relying entirely on standalone scripts.</p>
         <div class="chip-row"><span class="chip">Flask</span><span class="chip">MLOps</span><span class="chip">Data Analysis</span></div>
+          </div>
+        </div>
       </div>
 
     </div>

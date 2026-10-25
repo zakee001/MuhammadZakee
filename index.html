@@ -5,7 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <title>Muhammad Zakee Qureshi — AI Engineer</title>
 <meta name="description" content="AI Engineer specializing in Generative AI, multi-agent systems, and applied machine learning. Portfolio of production AI projects by Muhammad Zakee Qureshi." />
-<link rel="icon" href="data:,">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+<link rel="shortcut icon" href="assets/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -23,6 +26,12 @@
   <div class="nav__inner">
     <a href="index.html" class="nav__brand"><span class="dot"></span>Zakee Qureshi</a>
     <ul class="nav__links" data-nav-links>
+      <li class="nav__drawer-head">
+        <span class="nav__drawer-title"><span class="dot"></span>Menu</span>
+        <button class="nav__drawer-close" data-nav-close aria-label="Close menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+        </button>
+      </li>
       <li><a href="index.html" class="nav__link is-active">Home</a></li>
       <li><a href="projects.html" class="nav__link">Projects</a></li>
       <li><a href="about.html" class="nav__link">About</a></li>
@@ -36,7 +45,7 @@
       </li>
     </ul>
     <div class="nav__actions">
-      <a href="assets/resume.pdf" download class="btn btn-primary nav__resume-btn">
+      <a href="assets/resume.pdf" download class="btn btn-resume nav__resume-btn">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 19h16"/></svg>
         <span>Resume</span>
       </a>
@@ -50,6 +59,7 @@
     </div>
   </div>
 </nav>
+<div class="nav__backdrop" data-nav-backdrop></div>
 
 <main class="wrap">
 
@@ -88,10 +98,6 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-6-6l6 6-6 6"/></svg>
       </a>
       <a href="contact.html" class="btn btn-outline">Contact Me</a>
-      <a href="assets/resume.pdf" download class="btn btn-outline">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 19h16"/></svg>
-        Download 1-Page Resume
-      </a>
     </div>
 
     <div class="chip-row">
@@ -101,6 +107,25 @@
       <span class="chip">Computer Vision</span>
       <span class="chip">GCP · Azure</span>
       <span class="chip">Python</span>
+    </div>
+
+    <div class="stat-row">
+      <div class="stat">
+        <div class="stat__num-row"><span data-countup="15">0</span><span>+</span></div>
+        <span class="stat__label">Products Shipped</span>
+      </div>
+      <div class="stat">
+        <div class="stat__num-row"><span data-countup="10">0</span><span>+</span></div>
+        <span class="stat__label">Certifications</span>
+      </div>
+      <div class="stat">
+        <div class="stat__num-row"><span data-countup="3">0</span><span>+</span></div>
+        <span class="stat__label">Years Experience</span>
+      </div>
+      <div class="stat">
+        <div class="stat__num-row"><span data-countup="1000">0</span><span>+</span></div>
+        <span class="stat__label">Active Users</span>
+      </div>
     </div>
   </section>
 

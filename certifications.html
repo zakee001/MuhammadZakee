@@ -5,7 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <title>Certifications — Muhammad Zakee Qureshi</title>
 <meta name="description" content="Certifications earned by Muhammad Zakee Qureshi in Generative AI, Azure, and Google Cloud." />
-<link rel="icon" href="data:,">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+<link rel="shortcut icon" href="assets/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -23,6 +26,12 @@
   <div class="nav__inner">
     <a href="index.html" class="nav__brand"><span class="dot"></span>Zakee Qureshi</a>
     <ul class="nav__links" data-nav-links>
+      <li class="nav__drawer-head">
+        <span class="nav__drawer-title"><span class="dot"></span>Menu</span>
+        <button class="nav__drawer-close" data-nav-close aria-label="Close menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+        </button>
+      </li>
       <li><a href="index.html" class="nav__link">Home</a></li>
       <li><a href="projects.html" class="nav__link">Projects</a></li>
       <li><a href="about.html" class="nav__link">About</a></li>
@@ -36,7 +45,7 @@
       </li>
     </ul>
     <div class="nav__actions">
-      <a href="assets/resume.pdf" download class="btn btn-primary nav__resume-btn">
+      <a href="assets/resume.pdf" download class="btn btn-resume nav__resume-btn">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 19h16"/></svg>
         <span>Resume</span>
       </a>
@@ -50,6 +59,7 @@
     </div>
   </div>
 </nav>
+<div class="nav__backdrop" data-nav-backdrop></div>
 
 <main class="wrap">
 
@@ -59,54 +69,138 @@
   </div>
 
   <section class="section" style="border-top:none;">
-    <div class="cert-grid">
+    <div class="vtimeline">
 
-      <div class="cert-card reveal" data-cert-trigger tabindex="0" role="button"
-           data-cert-img="assets/certificates/cert-genai-gcp.png"
-           data-cert-title="Generative AI on GCP: An Introduction Course"
-           data-cert-meta="Codecademy — Issued January 16, 2026">
-        <div class="cert-card__thumb">
-          <img src="assets/certificates/cert-genai-gcp.png" alt="Generative AI on GCP certificate" loading="lazy" />
+      <div class="vtimeline__item reveal">
+        <div class="vtimeline__label"><span>Oct</span>2026</div>
+        <div class="vtimeline__rail"><span class="vtimeline__dot"></span></div>
+        <div class="vtimeline__content">
+          <div class="cert-card" data-cert-trigger tabindex="0" role="button"
+               data-cert-img="assets/certificates/cert-claude-code-101.png"
+               data-cert-title="Claude Code 101"
+               data-cert-meta="Anthropic — Issued October 2026">
+            <div class="cert-card__thumb">
+              <img src="assets/certificates/cert-claude-code-101.png" alt="Claude Code 101 certificate" loading="lazy" />
+            </div>
+            <div class="cert-card__body">
+              <h4>Claude Code 101</h4>
+              <div class="cert-card__meta">Anthropic</div>
+            </div>
+            <span class="cert-card__zoom">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3M11 8v6M8 11h6"/></svg>
+            </span>
+          </div>
         </div>
-        <div class="cert-card__body">
-          <h4>Generative AI on GCP: An Introduction Course</h4>
-          <div class="cert-card__meta">Codecademy <span class="dot"></span> Jan 2026</div>
-        </div>
-        <span class="cert-card__zoom">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3M11 8v6M8 11h6"/></svg>
-        </span>
       </div>
 
-      <div class="cert-card reveal" data-cert-trigger tabindex="0" role="button"
-           data-cert-img="assets/certificates/cert-azure-fundamentals.png"
-           data-cert-title="Microsoft Certified: Azure Fundamentals"
-           data-cert-meta="Microsoft — Issued June 8, 2023">
-        <div class="cert-card__thumb">
-          <img src="assets/certificates/cert-azure-fundamentals.png" alt="Microsoft Certified: Azure Fundamentals badge" loading="lazy" />
+      <div class="vtimeline__item reveal">
+        <div class="vtimeline__label"><span>Oct</span>2026</div>
+        <div class="vtimeline__rail"><span class="vtimeline__dot"></span></div>
+        <div class="vtimeline__content">
+          <div class="cert-card" data-cert-trigger tabindex="0" role="button"
+               data-cert-img="assets/certificates/cert-claude-101.png"
+               data-cert-title="Claude 101"
+               data-cert-meta="Anthropic — Issued October 2026">
+            <div class="cert-card__thumb">
+              <img src="assets/certificates/cert-claude-101.png" alt="Claude 101 certificate" loading="lazy" />
+            </div>
+            <div class="cert-card__body">
+              <h4>Claude 101</h4>
+              <div class="cert-card__meta">Anthropic</div>
+            </div>
+            <span class="cert-card__zoom">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3M11 8v6M8 11h6"/></svg>
+            </span>
+          </div>
         </div>
-        <div class="cert-card__body">
-          <h4>Microsoft Certified: Azure Fundamentals</h4>
-          <div class="cert-card__meta">Microsoft <span class="dot"></span> Jun 2023</div>
-        </div>
-        <span class="cert-card__zoom">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3M11 8v6M8 11h6"/></svg>
-        </span>
       </div>
 
-      <div class="cert-card reveal" data-cert-trigger tabindex="0" role="button"
-           data-cert-img="assets/certificates/cert-devops-ai-gcp.jpg"
-           data-cert-title="DevOps and AI on Google Cloud: AI-Powered CI/CD"
-           data-cert-meta="Udemy — Issued October 20, 2026">
-        <div class="cert-card__thumb">
-          <img src="assets/certificates/cert-devops-ai-gcp.jpg" alt="DevOps and AI on Google Cloud certificate" loading="lazy" />
+      <div class="vtimeline__item reveal">
+        <div class="vtimeline__label"><span>Oct</span>2026</div>
+        <div class="vtimeline__rail"><span class="vtimeline__dot"></span></div>
+        <div class="vtimeline__content">
+          <div class="cert-card" data-cert-trigger tabindex="0" role="button"
+               data-cert-img="assets/certificates/cert-devops-ai-gcp.jpg"
+               data-cert-title="DevOps and AI on Google Cloud: AI-Powered CI/CD"
+               data-cert-meta="Udemy — Issued October 20, 2026">
+            <div class="cert-card__thumb">
+              <img src="assets/certificates/cert-devops-ai-gcp.jpg" alt="DevOps and AI on Google Cloud certificate" loading="lazy" />
+            </div>
+            <div class="cert-card__body">
+              <h4>DevOps and AI on Google Cloud: AI-Powered CI/CD</h4>
+              <div class="cert-card__meta">Udemy</div>
+            </div>
+            <span class="cert-card__zoom">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3M11 8v6M8 11h6"/></svg>
+            </span>
+          </div>
         </div>
-        <div class="cert-card__body">
-          <h4>DevOps and AI on Google Cloud: AI-Powered CI/CD</h4>
-          <div class="cert-card__meta">Udemy <span class="dot"></span> Oct 2026</div>
+      </div>
+
+      <div class="vtimeline__item reveal">
+        <div class="vtimeline__label"><span>Jan</span>2026</div>
+        <div class="vtimeline__rail"><span class="vtimeline__dot"></span></div>
+        <div class="vtimeline__content">
+          <div class="cert-card" data-cert-trigger tabindex="0" role="button"
+               data-cert-img="assets/certificates/cert-genai-gcp.png"
+               data-cert-title="Generative AI on GCP: An Introduction Course"
+               data-cert-meta="Codecademy — Issued January 16, 2026">
+            <div class="cert-card__thumb">
+              <img src="assets/certificates/cert-genai-gcp.png" alt="Generative AI on GCP certificate" loading="lazy" />
+            </div>
+            <div class="cert-card__body">
+              <h4>Generative AI on GCP: An Introduction Course</h4>
+              <div class="cert-card__meta">Codecademy</div>
+            </div>
+            <span class="cert-card__zoom">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3M11 8v6M8 11h6"/></svg>
+            </span>
+          </div>
         </div>
-        <span class="cert-card__zoom">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3M11 8v6M8 11h6"/></svg>
-        </span>
+      </div>
+
+      <div class="vtimeline__item reveal">
+        <div class="vtimeline__label"><span>Jun</span>2023</div>
+        <div class="vtimeline__rail"><span class="vtimeline__dot"></span></div>
+        <div class="vtimeline__content">
+          <div class="cert-card" data-cert-trigger tabindex="0" role="button"
+               data-cert-img="assets/certificates/cert-azure-fundamentals.png"
+               data-cert-title="Microsoft Certified: Azure Fundamentals"
+               data-cert-meta="Microsoft — Issued June 8, 2023">
+            <div class="cert-card__thumb">
+              <img src="assets/certificates/cert-azure-fundamentals.png" alt="Microsoft Certified: Azure Fundamentals badge" loading="lazy" />
+            </div>
+            <div class="cert-card__body">
+              <h4>Microsoft Certified: Azure Fundamentals</h4>
+              <div class="cert-card__meta">Microsoft</div>
+            </div>
+            <span class="cert-card__zoom">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3M11 8v6M8 11h6"/></svg>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="vtimeline__item reveal">
+        <div class="vtimeline__label"><span>Mar</span>2021</div>
+        <div class="vtimeline__rail"><span class="vtimeline__dot"></span></div>
+        <div class="vtimeline__content">
+          <div class="cert-card" data-cert-trigger tabindex="0" role="button"
+               data-cert-img="assets/certificates/cert-python-crash-course.png"
+               data-cert-title="Crash Course on Python"
+               data-cert-meta="Google (via Coursera) — Issued March 26, 2021">
+            <div class="cert-card__thumb">
+              <img src="assets/certificates/cert-python-crash-course.png" alt="Crash Course on Python certificate" loading="lazy" />
+            </div>
+            <div class="cert-card__body">
+              <h4>Crash Course on Python</h4>
+              <div class="cert-card__meta">Google (via Coursera)</div>
+            </div>
+            <span class="cert-card__zoom">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3M11 8v6M8 11h6"/></svg>
+            </span>
+          </div>
+        </div>
       </div>
 
     </div>

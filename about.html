@@ -5,7 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <title>About — Muhammad Zakee Qureshi</title>
 <meta name="description" content="Experience, education, and technical skills of Muhammad Zakee Qureshi, AI Engineer." />
-<link rel="icon" href="data:,">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+<link rel="shortcut icon" href="assets/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -23,6 +26,12 @@
   <div class="nav__inner">
     <a href="index.html" class="nav__brand"><span class="dot"></span>Zakee Qureshi</a>
     <ul class="nav__links" data-nav-links>
+      <li class="nav__drawer-head">
+        <span class="nav__drawer-title"><span class="dot"></span>Menu</span>
+        <button class="nav__drawer-close" data-nav-close aria-label="Close menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+        </button>
+      </li>
       <li><a href="index.html" class="nav__link">Home</a></li>
       <li><a href="projects.html" class="nav__link">Projects</a></li>
       <li><a href="about.html" class="nav__link is-active">About</a></li>
@@ -36,7 +45,7 @@
       </li>
     </ul>
     <div class="nav__actions">
-      <a href="assets/resume.pdf" download class="btn btn-primary nav__resume-btn">
+      <a href="assets/resume.pdf" download class="btn btn-resume nav__resume-btn">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 19h16"/></svg>
         <span>Resume</span>
       </a>
@@ -50,6 +59,7 @@
     </div>
   </div>
 </nav>
+<div class="nav__backdrop" data-nav-backdrop></div>
 
 <main class="wrap">
 
@@ -66,16 +76,16 @@
         <div class="tl-role">Junior Consultant, Data Science</div>
         <div class="tl-meta">Systems Limited <span class="dot">•</span> Lahore, Pakistan <span class="dot">•</span> Nov 2023 – Present</div>
         <ul class="tl-bullets">
-          <li>Designed and implemented a multi-agent, domain-driven contract analysis system on Google Cloud Vertex AI, orchestrating specialized agents for structured extraction, legal reasoning, and automated clause evaluation.</li>
-          <li>Developed an AI-powered automation tool to streamline Active Directory health checks using Generative AI — executing diagnostics, parsing logs via LLMs to detect anomalies, and automating remediation.</li>
-          <li>Built a fully on-device Android shelf-to-catalog recognition pipeline using ArUco-guided capture, real-time YOLO detection, MobileNetV3 similarity matching, and SIFT-based verification.</li>
-          <li>Optimized and deployed a document processing pipeline using Azure Functions and Container Apps with serverless GPU, reducing response time from 7–8 minutes to 10 seconds (42x improvement).</li>
+          <li>Designed and implemented a multi-agent, domain-driven contract analysis system on Google Cloud <strong>Vertex AI</strong>, orchestrating specialized agents for structured extraction, legal reasoning, and automated clause evaluation.</li>
+          <li>Developed a POC for contract clause tracking and version comparison across AI processing and PDF-to-DOCX conversions. Explored <strong>PageIndex</strong> for document retrieval, <strong>Docling</strong> for structured parsing, and XML-based analysis for structural verification. Combined text matching and semantic similarity to detect added, removed, modified, and unchanged clauses while reducing false matches and improving traceability.</li>
+          <li>Developed an AI-powered automation tool to streamline Active Directory health checks using Generative AI — executing diagnostics, parsing logs via <strong>LLMs</strong> to detect anomalies, and automating remediation.</li>
+          <li>Built a fully on-device Android shelf-to-catalog recognition pipeline using ArUco-guided capture, real-time <strong>YOLO</strong> detection, <strong>MobileNetV3</strong> similarity matching, and SIFT-based verification.</li>
+          <li>Optimized and deployed a document processing pipeline using Azure Functions and Container Apps with serverless GPU, reducing response time from 7–8 minutes to <strong>10 seconds (42x improvement)</strong>.</li>
           <li>Developed an AI-powered insurance application for underwriters with integrated triage, risk analysis, and automated document reporting.</li>
-          <li>Built 4–5 retail applications using React.js with efficient API integrations to trigger backend pipelines.</li>
-          <li>Built a PDF retrieval system with React and Django, using vector databases and LLMs for prompt-based chunk extraction, with RBAC for secure, tailored access.</li>
-          <li>Applied Logistic Regression, Decision Tree, Random Forest, and XGBoost to predict Fixed Voice churn, outperforming random sampling and identifying key churn drivers.</li>
-          <li>Developed a Python web app with Flask to simplify data analysis and model training.</li>
-          <li><strong>AI-Powered Contract Clause Tracking and Version Comparison POC:</strong> Developed a proof of concept to track clause-level changes across contract versions, including AI-processed documents and PDF-to-DOCX conversions. Explored PageIndex for hierarchical document understanding, Docling for structured document parsing, and XML-based analysis for paragraph-level metadata and structural verification. Combined exact text matching, semantic similarity, and structural validation to identify added, removed, modified, and unchanged clauses while improving change detection accuracy and traceability.</li>
+          <li>Built 4–5 retail applications using <strong>React.js</strong> with efficient API integrations to trigger backend pipelines.</li>
+          <li>Built a PDF retrieval system with React and <strong>Django</strong>, using vector databases and LLMs for prompt-based chunk extraction, with <strong>RBAC</strong> for secure, tailored access.</li>
+          <li>Applied Logistic Regression, Decision Tree, <strong>Random Forest</strong>, and <strong>XGBoost</strong> to predict Fixed Voice churn, outperforming random sampling and identifying key churn drivers.</li>
+          <li>Developed a Python web app with <strong>Flask</strong> to simplify data analysis and model training.</li>
         </ul>
       </div>
 
@@ -83,9 +93,9 @@
         <div class="tl-role">Computer Vision Engineer</div>
         <div class="tl-meta">OMNO AI <span class="dot">•</span> Lahore, Pakistan <span class="dot">•</span> Jul 2023 – Aug 2023</div>
         <ul class="tl-bullets">
-          <li>Built real-time hand tracking using YOLO-NAS, inferring results via webcam and converting models to ONNX format.</li>
-          <li>Fine-tuned Llama-2 on a custom dataset.</li>
-          <li>Generated scene-specific images using Stable Diffusion.</li>
+          <li>Built real-time hand tracking using <strong>YOLO-NAS</strong>, inferring results via webcam and converting models to ONNX format.</li>
+          <li>Fine-tuned <strong>Llama-2</strong> on a custom dataset.</li>
+          <li>Generated scene-specific images using <strong>Stable Diffusion</strong>.</li>
         </ul>
       </div>
 
@@ -93,8 +103,8 @@
         <div class="tl-role">Computer Vision Intern</div>
         <div class="tl-meta">Adlytic AI <span class="dot">•</span> Lahore, Pakistan <span class="dot">•</span> Aug 2022 – Sep 2022</div>
         <ul class="tl-bullets">
-          <li>Worked on CNNs, EDA on an automotive dataset, image captioning, human activity recognition, and facial expression recognition.</li>
-          <li>Gained hands-on experience with LSTM for time-series prediction tasks.</li>
+          <li>Worked on <strong>CNNs</strong>, EDA on an automotive dataset, image captioning, human activity recognition, and facial expression recognition.</li>
+          <li>Gained hands-on experience with <strong>LSTM</strong> for time-series prediction tasks.</li>
         </ul>
       </div>
 
@@ -102,7 +112,7 @@
         <div class="tl-role">Data Analytics and Management Intern</div>
         <div class="tl-meta">Systems Limited <span class="dot">•</span> Lahore, Pakistan <span class="dot">•</span> Jul 2021 – Sep 2021</div>
         <ul class="tl-bullets">
-          <li>Gained hands-on experience with data warehousing, SQL queries, and ETL tools (SSIS, Power BI).</li>
+          <li>Gained hands-on experience with data warehousing, <strong>SQL</strong> queries, and ETL tools (SSIS, <strong>Power BI</strong>).</li>
           <li>Applied these concepts to build a management system with live data tracking.</li>
         </ul>
       </div>
